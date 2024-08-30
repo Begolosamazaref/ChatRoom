@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.ChatroomController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="-4.0" prefHeight="679.0" prefWidth="275.0" style="-fx-background-color: #005F6A;">
+            <children>
+                <ImageView fitHeight="177.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+                <ComboBox fx:id="status" layoutX="20.0" layoutY="173.0" prefHeight="31.0" prefWidth="241.0" promptText="Status" style="-fx-background-color: #FFF8DC; -fx-border-color: gray; -fx-border-width: 3px; -fx-border-radius: 9px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); -fx-background-radius: 12px;" />
+                <Button fx:id="logout" layoutX="156.0" layoutY="628.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="Log out">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="save" layoutX="33.0" layoutY="628.0" mnemonicParsing="false" onAction="#save" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="save">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+        <Pane layoutX="275.0" layoutY="608.0" prefHeight="65.0" prefWidth="674.0" style="-fx-background-color: 000000;">
+            <children>
+                <Button fx:id="send" layoutX="564.0" layoutY="19.0" mnemonicParsing="false" onAction="#send" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="Send">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="textfield" layoutX="22.0" layoutY="19.0" prefHeight="37.0" prefWidth="517.0" promptText="Enter text here...." style="-fx-border-radius: 10px; -fx-border-style: solid; -fx-padding: 8px 12حء; -fx-background-radius: 10px;" />
+            </children>
+        </Pane>
+        <ScrollPane fx:id="scrollpane" layoutX="276.0" layoutY="57.0" prefHeight="553.0" prefWidth="674.0">
+            <content>
+                <VBox fx:id="vboxMessage" prefHeight="551.0" prefWidth="676.0" />
+            </content>
+        </ScrollPane>
+        <Pane layoutX="272.0" prefHeight="58.0" prefWidth="711.0" style="-fx-background-color: #005F6A;">
+         <children>
+                <Label fx:id="labelUsername" layoutX="104.0" layoutY="11.0" prefHeight="37.0" prefWidth="132.0" text="username" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            <Label fx:id="labelUsername1" layoutX="7.0" layoutY="11.0" prefHeight="37.0" prefWidth="132.0" text="Welcome" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.server.SignUpController">
+    <children>
+        <Pane layoutX="1.0" prefHeight="680.0" prefWidth="960.0" style="-fx-background-color: #005F6A; -fx-border-color: #000000;">
+            <children>
+                <Button fx:id="signup" layoutX="318.0" layoutY="426.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="Sign Up">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="password" alignment="CENTER" layoutX="320.0" layoutY="312.0" prefHeight="35.0" prefWidth="382.0" promptText="Password" style="-fx-background-radius: 15;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <TextField fx:id="username" alignment="CENTER" layoutX="320.0" layoutY="256.0" prefHeight="35.0" prefWidth="382.0" promptText="User name" style="-fx-background-radius: 15;" />
+                <TextField fx:id="confirmpassword" alignment="CENTER" layoutX="320.0" layoutY="366.0" prefHeight="35.0" prefWidth="382.0" promptText="Confirm password" style="-fx-background-radius: 15;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <Button fx:id="cancel" layoutX="562.0" layoutY="426.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="138.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="Cancel">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="102.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="Error" layoutX="119.0" layoutY="401.0" prefHeight="17.0" prefWidth="239.0" />
+              <Button fx:id="back" layoutX="826.0" layoutY="37.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: ffcb05; -fx-background-radius: 15;" text="Back To Login">
+                  <font>
+                      <Font name="System Bold" size="11.0" />
+                  </font>
+              </Button>
+            <Label fx:id="Error1" layoutX="14.0" layoutY="135.0" prefHeight="83.0" prefWidth="960.0" text="                              Sign Up " textFill="#f4f2f2">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
