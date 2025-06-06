@@ -99,12 +99,5 @@ The project is divided into two main components:
 - **SignUpController.java**: Controls the registration interface
 - **DBUtils.java**: Utility functions for scene switching
 
-## Future Enhancements
-- End-to-end encryption for secure messaging
-- Private messaging between users
-- File sharing capabilities
-- Profile customization
-- Mobile application support
-
 ## Demo
 A video demonstration of the application is available in the repository: `ChatRoom.mp4`
