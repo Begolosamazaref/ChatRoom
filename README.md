@@ -1,5 +1,5 @@
 # ChatRoom Application
-
+ 
 ## Overview
 ChatRoom is a real-time messaging application built with Java, leveraging advanced technologies including JavaFX, JDBC, Socket Programming, Multi-Threading, and SQL. The application follows a client-server architecture to enable real-time communication between multiple users.
 
